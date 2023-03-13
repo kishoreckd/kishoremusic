@@ -130,6 +130,9 @@ next.addEventListener("click", (e) => {
     if (count == 4) {
         alert("The songs has been ended")
     }
+    if (count == 4) {
+        count =3
+    }
     audio.src = Songs[count].Music;
     img.src=Songs[count].img;
     songname.innerText = Songs[count].songName;
@@ -153,6 +156,9 @@ previous.addEventListener("click", (e) => {
     time()
 
     count--
+    if (count == -1) {
+        alert("This is the first song")
+    }
     move.innerText=Songs[count].move;
     audio.src = Songs[count].Music;
     img.src=Songs[count].img;
