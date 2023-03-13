@@ -127,6 +127,9 @@ next.addEventListener("click", (e) => {
 
     count++
    
+    if (count == 4) {
+        alert("The songs has been ended")
+    }
     audio.src = Songs[count].Music;
     img.src=Songs[count].img;
     songname.innerText = Songs[count].songName;
@@ -140,13 +143,11 @@ next.addEventListener("click", (e) => {
     setInterval(() => {
         
     }, 500)
- 
-        
-    
-  
+
 
     //check song length
 })
+
 // previous button
 previous.addEventListener("click", (e) => {
     time()
@@ -167,6 +168,7 @@ previous.addEventListener("click", (e) => {
 
     //check song length
 })
+
 
 function time(){
     setInterval(()=>{
