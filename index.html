@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/53c4033439.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+      
+        <div class="main">
+         <center>
+            <div class="play">
+                <div class="menu"><i class="fa-solid fa-bars"></i></div>
+               
+            </div>
+            
+            <div class="audioconatiner">
+                <p id="alert-msg"></p>
+                <img src="" class="image">
+                <h1 id="song-name"></h1>
+                <p id="artist"></p>
+    
+                <audio src="">
+                </audio>
+                <marquee id="move" behavior="" direction="left"></marquee>  
+                <div class="inp">
+                    <span id="currrenttime">00:00</span><input type="range" value="0" class="progress"><span id="fullTime">00:00</span>
+                </div>              
+                   
+    
+                <div class="controls">
+                    <div><i class="fa-solid fa-backward-step" id="perivious-song"></i></div>
+                    <div><i class="fa-solid fa-backward" id="backward"></i></div>
+                    <div><i class="fa-solid fa-play play" id="play"></i></div>
+                    <div><i class="fa-solid fa-forward" id="forward"></i></div>
+                    <div><i class="fa-solid fa-forward-step next" id="next-song"></i></div>
+                    
+                </div>
+                <div class="volume">
+                    <div><i class="fa-solid fa-volume"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="playlist">  
+            <h2>All Songs</h2>
+            <div class="dv">
+                <ul class="allsong">
+
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+ 
+     </center>
+    
+    <script src="index.js"></script>
+</body>
+</html>
